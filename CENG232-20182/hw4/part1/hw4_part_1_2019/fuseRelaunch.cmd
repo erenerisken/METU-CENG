@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw4/part1/hw4_part_1_2019/rgb_testbench_isim_beh.exe" -prj "C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw4/part1/hw4_part_1_2019/rgb_testbench_beh.prj" "work.rgb_testbench" "work.glbl" 

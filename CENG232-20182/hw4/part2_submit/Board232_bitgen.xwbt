@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\erene\OneDrive\Belgeler\Dersler\20182\CENG232\hw4\part2_submit\Board232.ncd
-OUTFILE=C:\Users\erene\OneDrive\Belgeler\Dersler\20182\CENG232\hw4\part2_submit\Board232.bit
-FAMILY=Spartan3E
-PART=xc3s250e-5cp132
-WORKINGDIR=C:\Users\erene\OneDrive\Belgeler\Dersler\20182\CENG232\hw4\part2_submit
-LICENSE=WebPack
-USER_INFO=211721202_0_0_932

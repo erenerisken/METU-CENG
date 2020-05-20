@@ -1,9 +1,0 @@
-digraph CengBook
-{
-  graph [label="CengBook\nNumber of users = 0" , labelloc=t] ;
-
-  node  [shape=ellipse , fontcolor=black , color=red , penwidth=2.0] ;
-
-  edge  [color=blue , penwidth=2.0] ;
-
-}
