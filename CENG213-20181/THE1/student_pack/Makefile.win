@@ -1,0 +1,37 @@
+# Project: the1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = User.o Video.o VideoShare.o main_VideoShare.o
+LINKOBJ  = User.o Video.o VideoShare.o main_VideoShare.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = the1.exe
+CXXFLAGS = $(CXXINCS) -m32 -Wl,--stack,50000000 -ansi
+CFLAGS   = $(INCS) -m32 -Wl,--stack,50000000 -ansi
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+User.o: User.cpp
+	$(CPP) -c User.cpp -o User.o $(CXXFLAGS)
+
+Video.o: Video.cpp
+	$(CPP) -c Video.cpp -o Video.o $(CXXFLAGS)
+
+VideoShare.o: VideoShare.cpp
+	$(CPP) -c VideoShare.cpp -o VideoShare.o $(CXXFLAGS)
+
+main_VideoShare.o: main_VideoShare.cpp
+	$(CPP) -c main_VideoShare.cpp -o main_VideoShare.o $(CXXFLAGS)

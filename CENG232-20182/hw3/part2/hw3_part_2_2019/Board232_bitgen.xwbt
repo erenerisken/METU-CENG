@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\erene\OneDrive\Belgeler\Dersler\20182\CENG232\hw3\part2\hw3_part_2_2019\Board232.ncd
+OUTFILE=C:\Users\erene\OneDrive\Belgeler\Dersler\20182\CENG232\hw3\part2\hw3_part_2_2019\Board232.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5cp132
+WORKINGDIR=C:\Users\erene\OneDrive\Belgeler\Dersler\20182\CENG232\hw3\part2\hw3_part_2_2019
+LICENSE=WebPack
+USER_INFO=211721202_0_0_932

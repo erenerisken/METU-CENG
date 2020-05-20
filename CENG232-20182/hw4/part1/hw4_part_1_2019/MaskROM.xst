@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw4/part1/hw4_part_1_2019/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw4/part1/hw4_part_1_2019/xst"
+elaborate
+-ifn MaskROM.prj
+-ifmt mixed

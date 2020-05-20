@@ -1,0 +1,32 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw3/part2/hw3_part_2_2019/hw3_part_2_2019/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw3/part2/hw3_part_2_2019/hw3_part_2_2019/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "lab3_2.v" in library work
+ERROR:HDLCompilers:26 - "lab3_2.v" line 2 expecting ')', found '['
+Module <isPrime> compiled
+ERROR:HDLCompilers:26 - "lab3_2.v" line 5 expecting 'endmodule', found 'module'
+Analysis of file <".prj"> failed.
+--> 
+
+Total memory usage is 220868 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

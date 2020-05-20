@@ -1,0 +1,625 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Board232.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Board232.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Board232"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-cp132
+
+---- Source Options
+Top Module Name                    : Board232
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "lab3_2.v" in library work
+Compiling verilog file "Board232.v" in library work
+Module <lab3_2> compiled
+Module <Board232> compiled
+No errors in compilation
+Analysis of file <"Board232.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Board232> in library <work>.
+
+Analyzing hierarchy for module <lab3_2> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Board232>.
+WARNING:Xst:2725 - "Board232.v" line 85: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 86: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 87: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 88: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 89: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 90: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 91: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 92: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 93: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 94: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 95: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 96: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 97: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 98: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 99: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Board232.v" line 100: Size mismatch between case item and case selector.
+WARNING:Xst:905 - "Board232.v" line 60: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <digit0>, <digit1>, <count0>, <count1>, <tmp_digit>
+Module <Board232> is correct for synthesis.
+ 
+Analyzing module <lab3_2> in library <work>.
+Module <lab3_2> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <digit0<7>> in unit <lab3_2> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit0<6>> in unit <lab3_2> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit0<5>> in unit <lab3_2> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit0<4>> in unit <lab3_2> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <lab3_2>.
+    Related source file is "lab3_2.v".
+WARNING:Xst:646 - Signal <prime> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x1-bit ROM for signal <$old_prime_3>.
+    Found 8-bit register for signal <count0>.
+    Found 8-bit register for signal <count1>.
+    Found 4-bit register for signal <digit0<3:0>>.
+    Found 8-bit register for signal <digit1>.
+    Found 1-bit register for signal <warning>.
+    Found 8-bit register for signal <count00>.
+    Found 8-bit register for signal <count01>.
+    Found 8-bit register for signal <count10>.
+    Found 8-bit register for signal <count11>.
+    Found 8-bit comparator greater for signal <old_count00_11$cmp_gt0000> created at line 180.
+    Found 8-bit comparator greater for signal <old_count01_9$cmp_gt0000> created at line 162.
+    Found 8-bit comparator greater for signal <old_count10_7$cmp_gt0000> created at line 129.
+    Found 8-bit comparator greater for signal <old_count11_5$cmp_gt0000> created at line 101.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  61 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <lab3_2> synthesized.
+
+
+Synthesizing Unit <Board232>.
+    Related source file is "Board232.v".
+WARNING:Xst:647 - Input <btn<3:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <tmp_digit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x7-bit ROM for signal <seg$mux0000>.
+    Found 1-of-4 decoder for signal <an>.
+    Found 27-bit up counter for signal <mclk_counter>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <Board232> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x1-bit ROM                                          : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 8-bit adder                                           : 4
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 12
+ 1-bit register                                        : 5
+ 8-bit register                                        : 7
+# Comparators                                          : 4
+ 8-bit comparator greater                              : 4
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <digit1_4> has a constant value of 0 in block <HH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit1_5> has a constant value of 0 in block <HH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit1_6> has a constant value of 0 in block <HH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <digit1_7> has a constant value of 0 in block <HH>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x1-bit ROM                                          : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 8-bit adder                                           : 4
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+# Comparators                                          : 4
+ 8-bit comparator greater                              : 4
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <digit1_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit1_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit1_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <digit1_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mclk_counter_26> of sequential type is unconnected in block <Board232>.
+
+Optimizing unit <Board232> ...
+
+Optimizing unit <lab3_2> ...
+WARNING:Xst:1293 - FF/Latch <count11_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count11_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count11_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count11_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count11_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count10_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count00_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count0_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count01_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_7> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_6> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_5> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <count1_4> has a constant value of 0 in block <lab3_2>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Board232, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Board232.ngr
+Top Level Output File Name         : Board232
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 43
+
+Cell Usage :
+# BELS                             : 191
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 25
+#      LUT2                        : 11
+#      LUT3                        : 28
+#      LUT4                        : 49
+#      LUT4_L                      : 1
+#      MUXCY                       : 25
+#      MUXF5                       : 19
+#      MUXF6                       : 2
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 59
+#      FD                          : 26
+#      FDR                         : 1
+#      FDRE                        : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 39
+#      IBUF                        : 9
+#      OBUF                        : 30
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250ecp132-5 
+
+ Number of Slices:                       65  out of   2448     2%  
+ Number of Slice Flip Flops:             58  out of   4896     1%  
+ Number of 4 input LUTs:                115  out of   4896     2%  
+ Number of IOs:                          43
+ Number of bonded IOBs:                  40  out of     92    43%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+mclk                               | BUFGP                  | 26    |
+clk1(clk1:O)                       | BUFG(*)(HH/warning)    | 33    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.191ns (Maximum Frequency: 238.635MHz)
+   Minimum input arrival time before clock: 5.404ns
+   Maximum output required time after clock: 7.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 4.191ns (frequency: 238.635MHz)
+  Total number of paths / destination ports: 351 / 26
+-------------------------------------------------------------------------
+Delay:               4.191ns (Levels of Logic = 26)
+  Source:            mclk_counter_1 (FF)
+  Destination:       mclk_counter_25 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: mclk_counter_1 to mclk_counter_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.514   0.509  mclk_counter_1 (mclk_counter_1)
+     LUT1:I0->O            1   0.612   0.000  Mcount_mclk_counter_cy<1>_rt (Mcount_mclk_counter_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcount_mclk_counter_cy<1> (Mcount_mclk_counter_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_mclk_counter_cy<2> (Mcount_mclk_counter_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_mclk_counter_cy<3> (Mcount_mclk_counter_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_mclk_counter_cy<4> (Mcount_mclk_counter_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<5> (Mcount_mclk_counter_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<6> (Mcount_mclk_counter_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<7> (Mcount_mclk_counter_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<8> (Mcount_mclk_counter_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<9> (Mcount_mclk_counter_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<10> (Mcount_mclk_counter_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<11> (Mcount_mclk_counter_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<12> (Mcount_mclk_counter_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<13> (Mcount_mclk_counter_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<14> (Mcount_mclk_counter_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<15> (Mcount_mclk_counter_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<16> (Mcount_mclk_counter_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<17> (Mcount_mclk_counter_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<18> (Mcount_mclk_counter_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<19> (Mcount_mclk_counter_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<20> (Mcount_mclk_counter_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<21> (Mcount_mclk_counter_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<22> (Mcount_mclk_counter_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_mclk_counter_cy<23> (Mcount_mclk_counter_cy<23>)
+     MUXCY:CI->O           0   0.051   0.000  Mcount_mclk_counter_cy<24> (Mcount_mclk_counter_cy<24>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_mclk_counter_xor<25> (Result<25>)
+     FD:D                      0.268          mclk_counter_25
+    ----------------------------------------
+    Total                      4.191ns (3.682ns logic, 0.509ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk1'
+  Clock period: 3.612ns (frequency: 276.878MHz)
+  Total number of paths / destination ports: 145 / 28
+-------------------------------------------------------------------------
+Delay:               3.612ns (Levels of Logic = 3)
+  Source:            HH/count00_3 (FF)
+  Destination:       HH/count0_3 (FF)
+  Source Clock:      clk1 rising
+  Destination Clock: clk1 rising
+
+  Data Path: HH/count00_3 to HH/count0_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.514   0.819  HH/count00_3 (HH/count00_3)
+     LUT2:I1->O            1   0.612   0.509  HH/count0_mux0000<3>170 (HH/count0_mux0000<3>170)
+     LUT4:I0->O            1   0.612   0.000  HH/count0_mux0000<3>1146_F (N14)
+     MUXF5:I0->O           1   0.278   0.000  HH/count0_mux0000<3>1146 (HH/count0_mux0000<3>)
+     FDRE:D                    0.268          HH/count0_3
+    ----------------------------------------
+    Total                      3.612ns (2.284ns logic, 1.328ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk1'
+  Total number of paths / destination ports: 311 / 82
+-------------------------------------------------------------------------
+Offset:              5.404ns (Levels of Logic = 3)
+  Source:            sw<4> (PAD)
+  Destination:       HH/count0_3 (FF)
+  Destination Clock: clk1 rising
+
+  Data Path: sw<4> to HH/count0_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.106   1.074  sw_4_IBUF (sw_4_IBUF)
+     LUT4:I0->O            6   0.612   0.638  HH/count00_not000121 (HH/count00_not0001_bdd0)
+     LUT2:I1->O           16   0.612   0.879  HH/digit1_not000121 (HH/digit1_not0001)
+     FDRE:CE                   0.483          HH/digit0_2
+    ----------------------------------------
+    Total                      5.404ns (2.813ns logic, 2.591ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              7.283ns (Levels of Logic = 4)
+  Source:            mclk_counter_17 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      mclk rising
+
+  Data Path: mclk_counter_17 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.514   0.988  mclk_counter_17 (mclk_counter_17)
+     LUT3:I0->O            1   0.612   0.000  Mmux__old_tmp_digit_2_3 (Mmux__old_tmp_digit_2_3)
+     MUXF5:I1->O           7   0.278   0.754  Mmux__old_tmp_digit_2_2_f5 (_old_tmp_digit_2<0>)
+     LUT4:I0->O            1   0.612   0.357  seg<0>1 (seg_0_OBUF)
+     OBUF:I->O                 3.169          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      7.283ns (5.185ns logic, 2.098ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1'
+  Total number of paths / destination ports: 113 / 8
+-------------------------------------------------------------------------
+Offset:              6.864ns (Levels of Logic = 4)
+  Source:            HH/digit1_3 (FF)
+  Destination:       seg<4> (PAD)
+  Source Clock:      clk1 rising
+
+  Data Path: HH/digit1_3 to seg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.514   0.568  HH/digit1_3 (HH/digit1_3)
+     LUT3:I2->O            1   0.612   0.000  Mmux__old_tmp_digit_2_43 (Mmux__old_tmp_digit_2_43)
+     MUXF5:I0->O           7   0.278   0.754  Mmux__old_tmp_digit_2_2_f5_2 (_old_tmp_digit_2<3>)
+     LUT4:I0->O            1   0.612   0.357  seg<4>1 (seg_4_OBUF)
+     OBUF:I->O                 3.169          seg_4_OBUF (seg<4>)
+    ----------------------------------------
+    Total                      6.864ns (5.185ns logic, 1.679ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.72 secs
+ 
+--> 
+
+Total memory usage is 240536 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  113 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
