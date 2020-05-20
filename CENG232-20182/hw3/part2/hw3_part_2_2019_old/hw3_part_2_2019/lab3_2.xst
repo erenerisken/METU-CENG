@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw3/part2/hw3_part_2_2019/hw3_part_2_2019/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/erene/OneDrive/Belgeler/Dersler/20182/CENG232/hw3/part2/hw3_part_2_2019/hw3_part_2_2019/xst"
+elaborate
+-ifn lab3_2.prj
+-ifmt mixed

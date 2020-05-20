@@ -1,0 +1,9 @@
+writeExpression ((ASTNode "plus" (ASTNode "num" (ASTNode "333" EmptyAST EmptyAST) EmptyAST)(ASTNode "num" (ASTNode "667" EmptyAST EmptyAST ) EmptyAST ) ) ,[])
+writeExpression ( ( ASTNode "times" ( ASTNode "plus" ( ASTNode "num" ( ASTNode "333" EmptyAST EmptyAST ) EmptyAST ) (ASTNode "num" ( ASTNode "667" EmptyAST EmptyAST ) EmptyAST ) ) ( ASTNode "y" EmptyAST EmptyAST ) ) , [ ( "y" , "num" , "14" ) ] )
+writeExpression ( ( ASTNode "cat" ( ASTNode "a" EmptyAST EmptyAST ) ( ASTNode "b" EmptyAST EmptyAST ) ) , [ ( "a" , "str" , "hello_" ) , ( "b" , "str" , "world!" ) ] )
+writeExpression ( ( ASTNode "negate" ( ( ASTNode "len" ( ASTNode "cat" ( ASTNode "str" ( ASTNode "C" EmptyAST EmptyAST ) EmptyAST ) ( ASTNode "str" ( ASTNode "Eng" EmptyAST EmptyAST ) EmptyAST ) ) EmptyAST ) ) EmptyAST ) , [] )
+
+evaluateAST ( ( ASTNode "times" ( ASTNode "plus" ( ASTNode "num" ( ASTNode "333" EmptyAST EmptyAST ) EmptyAST ) ( ASTNode "num" ( ASTNode "667" EmptyAST EmptyAST ) EmptyAST ) ) ( ASTNode "y" EmptyAST EmptyAST ) ) , [ ( "y" , "num" , "14" ) ] )
+evaluateAST ( ( ASTNode "plus" ( ASTNode "num" ( ASTNode "333" EmptyAST EmptyAST ) EmptyAST ) ( ASTNode "num" ( ASTNode "667" EmptyAST EmptyAST ) EmptyAST ) ) , [] )
+evaluateAST ( ( ASTNode "cat" ( ASTNode "a" EmptyAST EmptyAST ) ( ASTNode "b" EmptyAST EmptyAST ) ) , [ ( "a" , "str" , "hello_" ) , ( "b" , "str" , "world!" ) ] )
+evaluateAST ( ( ASTNode "negate" ( ( ASTNode "len" ( ASTNode "cat" ( ASTNode "str" ( ASTNode "C" EmptyAST EmptyAST ) EmptyAST ) ( ASTNode "str" ( ASTNode "Eng" EmptyAST EmptyAST ) EmptyAST ) ) EmptyAST ) ) EmptyAST ) , [] )
